@@ -36,7 +36,7 @@
   </nav>
 
   <div class="corner">
-    <a href="https://github.com/sveltejs/kit">
+    <a href="https://github.com/cai0117/svelte-md-example">
       <img src={github} alt="GitHub" />
     </a>
   </div>
