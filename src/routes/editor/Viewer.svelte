@@ -8,20 +8,16 @@
   export let value: Props["value"] = "";
 
   let file: VFile;
-  let i = 0;
 
   $: try {
     file = getProcessor().processSync(value);
-    i++;
   } catch (error) {
     console.error(error);
   }
-
-  $: html = `${file}<!--${i}-->`;
 </script>
 
 <div class="markdown-body">
-  {@html html}
+  {@html file}
 </div>
 
 <style>
