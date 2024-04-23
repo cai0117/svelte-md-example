@@ -6,15 +6,12 @@
   import { getProcessor } from "./utils/getProcessor";
 
   export let value: Props["value"] = "";
-  export let sanitize: Props["sanitize"] = undefined;
 
   let file: VFile;
   let i = 0;
 
   $: try {
-    file = getProcessor({
-      sanitize,
-    }).processSync(value);
+    file = getProcessor().processSync(value);
     i++;
   } catch (error) {
     console.error(error);
