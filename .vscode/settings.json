@@ -1,0 +1,6 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib", // 项目中使用的ts是自带的ts文件不是vscode的
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.formatOnSave": true,
+  "files.eol": "auto"
+}
